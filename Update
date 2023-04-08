@@ -1,0 +1,615 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local UpdatesTest = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local UIGradient = Instance.new("UIGradient")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local UIGridLayout = Instance.new("UIGridLayout")
+local Updates = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local VersionFrame = Instance.new("Frame")
+local version = Instance.new("TextLabel")
+local UICorner_2 = Instance.new("UICorner")
+local UIGradient_2 = Instance.new("UIGradient")
+local ReleaseDateFrame = Instance.new("Frame")
+local version_2 = Instance.new("TextLabel")
+local UIGradient_3 = Instance.new("UIGradient")
+local UICorner_3 = Instance.new("UICorner")
+local MainUpdateFrame = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+local UIGradient_4 = Instance.new("UIGradient")
+local AddedFrame = Instance.new("Frame")
+local UIGradient_5 = Instance.new("UIGradient")
+local added = Instance.new("TextLabel")
+local Frame = Instance.new("Frame")
+local Added_Icon = Instance.new("ImageLabel")
+local UIPadding = Instance.new("UIPadding")
+local UIListLayout = Instance.new("UIListLayout")
+local ChangesFrame = Instance.new("Frame")
+local UIGradient_6 = Instance.new("UIGradient")
+local changes = Instance.new("TextLabel")
+local Frame_2 = Instance.new("Frame")
+local Added_Icon_2 = Instance.new("ImageLabel")
+local UIPadding_2 = Instance.new("UIPadding")
+local FixedFrame = Instance.new("Frame")
+local UIGradient_7 = Instance.new("UIGradient")
+local Frame_3 = Instance.new("Frame")
+local Added_Icon_3 = Instance.new("ImageLabel")
+local UIPadding_3 = Instance.new("UIPadding")
+local fixed = Instance.new("TextLabel")
+local TextLabel = Instance.new("TextLabel")
+local Line = Instance.new("Frame")
+local MainFrame_2 = Instance.new("Frame")
+local shadow = Instance.new("ImageLabel")
+local UIGradient_8 = Instance.new("UIGradient")
+local Exit = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local CreditFrame = Instance.new("Frame")
+local Credit = Instance.new("TextLabel")
+local shadow_2 = Instance.new("ImageLabel")
+local OpenH = Instance.new("TextButton")
+local TextLabel_3 = Instance.new("TextLabel")
+local UIGradient_9 = Instance.new("UIGradient")
+local PenumbraShadow = Instance.new("ImageLabel")
+local AmbientShadow = Instance.new("ImageLabel")
+local UmbraShadow = Instance.new("ImageLabel")
+
+--Properties:
+
+UpdatesTest.Name = "UpdatesTest"
+UpdatesTest.Parent = game:GetService("CoreGui")
+UpdatesTest.ResetOnSpawn = false
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = UpdatesTest
+MainFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+MainFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainFrame.BorderSizePixel = 0
+MainFrame.Position = UDim2.new(0.5, 0, 1.5, 0)
+MainFrame.Size = UDim2.new(0.551232159, 0, 0.639686704, 0)
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(22, 22, 22)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(118, 118, 118))}
+UIGradient.Rotation = 43
+UIGradient.Parent = MainFrame
+
+ScrollingFrame.Parent = MainFrame
+ScrollingFrame.Active = true
+ScrollingFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame.BackgroundTransparency = 1.000
+ScrollingFrame.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Position = UDim2.new(0.5, 0, 0.618285716, 0)
+ScrollingFrame.Size = UDim2.new(1, 0, 0.763265312, 0)
+ScrollingFrame.ScrollBarThickness = 5
+
+UIGridLayout.Parent = ScrollingFrame
+UIGridLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIGridLayout.CellPadding = UDim2.new(0, 5, 0, 12)
+UIGridLayout.CellSize = UDim2.new(0, 310, 0, 250)
+
+Updates.Name = "Updates"
+Updates.Parent = ScrollingFrame
+Updates.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+Updates.BorderSizePixel = 0
+Updates.Size = UDim2.new(0, 100, 0, 100)
+
+UICorner.Parent = Updates
+
+VersionFrame.Name = "Version Frame"
+VersionFrame.Parent = Updates
+VersionFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+VersionFrame.BorderSizePixel = 0
+VersionFrame.Position = UDim2.new(0.0241935477, 0, 0.0357142873, 0)
+VersionFrame.Size = UDim2.new(0, 101, 0, 17)
+
+version.Name = "version"
+version.Parent = VersionFrame
+version.AnchorPoint = Vector2.new(0.5, 0.5)
+version.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+version.BackgroundTransparency = 1.000
+version.BorderSizePixel = 0
+version.Position = UDim2.new(0.5, 0, 0.5, 0)
+version.Size = UDim2.new(0, 95, 0, 18)
+version.Font = Enum.Font.GothamBold
+version.Text = "Version: v1.2.1"
+version.TextColor3 = Color3.fromRGB(255, 255, 255)
+version.TextScaled = true
+version.TextSize = 14.000
+version.TextWrapped = true
+
+UICorner_2.Parent = VersionFrame
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(53, 53, 53)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(72, 72, 72))}
+UIGradient_2.Rotation = 42
+UIGradient_2.Parent = VersionFrame
+
+ReleaseDateFrame.Name = "Release Date Frame"
+ReleaseDateFrame.Parent = Updates
+ReleaseDateFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ReleaseDateFrame.BorderSizePixel = 0
+ReleaseDateFrame.Position = UDim2.new(0.377419353, 0, 0.0357143134, 0)
+ReleaseDateFrame.Size = UDim2.new(0, 185, 0, 17)
+
+version_2.Name = "version"
+version_2.Parent = ReleaseDateFrame
+version_2.AnchorPoint = Vector2.new(0.5, 0.5)
+version_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+version_2.BackgroundTransparency = 1.000
+version_2.BorderSizePixel = 0
+version_2.Position = UDim2.new(0.500529647, 0, 0.5, 0)
+version_2.Size = UDim2.new(0, 176, 0, 18)
+version_2.Font = Enum.Font.GothamBold
+version_2.Text = "Release Date: 04/08/2023"
+version_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+version_2.TextScaled = true
+version_2.TextSize = 14.000
+version_2.TextWrapped = true
+
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(53, 53, 53)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(72, 72, 72))}
+UIGradient_3.Rotation = 42
+UIGradient_3.Parent = ReleaseDateFrame
+
+UICorner_3.Parent = ReleaseDateFrame
+
+MainUpdateFrame.Name = "MainUpdateFrame"
+MainUpdateFrame.Parent = Updates
+MainUpdateFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+MainUpdateFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainUpdateFrame.Position = UDim2.new(0.5, 0, 0.546000004, 0)
+MainUpdateFrame.Size = UDim2.new(0, 294, 0, 203)
+
+UICorner_4.Parent = MainUpdateFrame
+
+UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(53, 53, 53)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(72, 72, 72))}
+UIGradient_4.Rotation = 42
+UIGradient_4.Parent = MainUpdateFrame
+
+AddedFrame.Name = "Added Frame"
+AddedFrame.Parent = MainUpdateFrame
+AddedFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+AddedFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AddedFrame.BackgroundTransparency = 1.000
+AddedFrame.Position = UDim2.new(0.5, 0, 0.259954661, 0)
+AddedFrame.Size = UDim2.new(0, 278, 0, 89)
+
+UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(53, 53, 53)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(72, 72, 72))}
+UIGradient_5.Rotation = 42
+UIGradient_5.Parent = AddedFrame
+
+added.Name = "added"
+added.Parent = AddedFrame
+added.AnchorPoint = Vector2.new(0.5, 0.5)
+added.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+added.BackgroundTransparency = 1.000
+added.BorderSizePixel = 0
+added.Position = UDim2.new(0.502472997, 0, 0.515167594, 0)
+added.Size = UDim2.new(0, 276, 0, 87)
+added.Font = Enum.Font.GothamBold
+added.Text = "Added"
+added.TextColor3 = Color3.fromRGB(255, 255, 255)
+added.TextSize = 16.000
+added.TextWrapped = true
+added.TextXAlignment = Enum.TextXAlignment.Left
+added.TextYAlignment = Enum.TextYAlignment.Top
+
+Frame.Parent = AddedFrame
+Frame.AnchorPoint = Vector2.new(0.5, 0.5)
+Frame.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Frame.BackgroundTransparency = 1.000
+Frame.Position = UDim2.new(0.259000003, 0, 0.122000001, 0)
+Frame.Size = UDim2.new(0, 32, 0, 22)
+Frame.ZIndex = 2
+
+Added_Icon.Name = "Added_Icon"
+Added_Icon.Parent = Frame
+Added_Icon.AnchorPoint = Vector2.new(0.5, 0.5)
+Added_Icon.BackgroundTransparency = 1.000
+Added_Icon.Position = UDim2.new(0.296301454, 0, 0.497083247, 0)
+Added_Icon.Size = UDim2.new(0.436808854, 0, 0.517201364, 0)
+Added_Icon.ZIndex = 5
+Added_Icon.Image = "rbxassetid://7072720824"
+
+UIPadding.Parent = Frame
+UIPadding.PaddingBottom = UDim.new(0, -1)
+UIPadding.PaddingLeft = UDim.new(0, -2)
+UIPadding.PaddingRight = UDim.new(0, -1)
+UIPadding.PaddingTop = UDim.new(0, -1)
+
+UIListLayout.Parent = MainUpdateFrame
+UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(0, -35)
+
+ChangesFrame.Name = "Changes Frame"
+ChangesFrame.Parent = MainUpdateFrame
+ChangesFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+ChangesFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ChangesFrame.BackgroundTransparency = 1.000
+ChangesFrame.Position = UDim2.new(0.5, 0, 0.259954661, 0)
+ChangesFrame.Size = UDim2.new(0, 278, 0, 89)
+
+UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(53, 53, 53)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(72, 72, 72))}
+UIGradient_6.Rotation = 42
+UIGradient_6.Parent = ChangesFrame
+
+changes.Name = "changes"
+changes.Parent = ChangesFrame
+changes.AnchorPoint = Vector2.new(0.5, 0.5)
+changes.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+changes.BackgroundTransparency = 1.000
+changes.BorderSizePixel = 0
+changes.Position = UDim2.new(0.502472997, 0, 0.515167594, 0)
+changes.Size = UDim2.new(0, 276, 0, 87)
+changes.Font = Enum.Font.GothamBold
+changes.Text = "Changes"
+changes.TextColor3 = Color3.fromRGB(255, 255, 255)
+changes.TextSize = 16.000
+changes.TextWrapped = true
+changes.TextXAlignment = Enum.TextXAlignment.Left
+changes.TextYAlignment = Enum.TextYAlignment.Top
+
+Frame_2.Parent = ChangesFrame
+Frame_2.AnchorPoint = Vector2.new(0.5, 0.5)
+Frame_2.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Frame_2.BackgroundTransparency = 1.000
+Frame_2.Position = UDim2.new(0.310000002, 0, 0.122000001, 0)
+Frame_2.Size = UDim2.new(0, 32, 0, 22)
+Frame_2.ZIndex = 2
+
+Added_Icon_2.Name = "Added_Icon"
+Added_Icon_2.Parent = Frame_2
+Added_Icon_2.AnchorPoint = Vector2.new(0.5, 0.5)
+Added_Icon_2.BackgroundTransparency = 1.000
+Added_Icon_2.Position = UDim2.new(0.296301454, 0, 0.497083247, 0)
+Added_Icon_2.Size = UDim2.new(0.436808854, 0, 0.517201364, 0)
+Added_Icon_2.ZIndex = 5
+Added_Icon_2.Image = "rbxassetid://7072715962"
+
+UIPadding_2.Parent = Frame_2
+UIPadding_2.PaddingBottom = UDim.new(0, -1)
+UIPadding_2.PaddingLeft = UDim.new(0, -2)
+UIPadding_2.PaddingRight = UDim.new(0, -1)
+UIPadding_2.PaddingTop = UDim.new(0, -1)
+
+FixedFrame.Name = "Fixed Frame"
+FixedFrame.Parent = MainUpdateFrame
+FixedFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+FixedFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FixedFrame.BackgroundTransparency = 1.000
+FixedFrame.Position = UDim2.new(0.5, 0, 0.259954661, 0)
+FixedFrame.Size = UDim2.new(0, 278, 0, 89)
+
+UIGradient_7.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(53, 53, 53)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(72, 72, 72))}
+UIGradient_7.Rotation = 42
+UIGradient_7.Parent = FixedFrame
+
+Frame_3.Parent = FixedFrame
+Frame_3.AnchorPoint = Vector2.new(0.5, 0.5)
+Frame_3.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Frame_3.BackgroundTransparency = 1.000
+Frame_3.Position = UDim2.new(0.224000007, 0, 0.122000001, 0)
+Frame_3.Size = UDim2.new(0, 32, 0, 22)
+Frame_3.ZIndex = 2
+
+Added_Icon_3.Name = "Added_Icon"
+Added_Icon_3.Parent = Frame_3
+Added_Icon_3.AnchorPoint = Vector2.new(0.5, 0.5)
+Added_Icon_3.BackgroundTransparency = 1.000
+Added_Icon_3.Position = UDim2.new(0.296301454, 0, 0.497083247, 0)
+Added_Icon_3.Size = UDim2.new(0.436808854, 0, 0.517201364, 0)
+Added_Icon_3.ZIndex = 5
+Added_Icon_3.Image = "rbxassetid://7072719290"
+
+UIPadding_3.Parent = Frame_3
+UIPadding_3.PaddingBottom = UDim.new(0, -1)
+UIPadding_3.PaddingRight = UDim.new(0, -1)
+UIPadding_3.PaddingTop = UDim.new(0, -1)
+
+fixed.Name = "fixed"
+fixed.Parent = FixedFrame
+fixed.AnchorPoint = Vector2.new(0.5, 0.5)
+fixed.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+fixed.BackgroundTransparency = 1.000
+fixed.BorderSizePixel = 0
+fixed.Position = UDim2.new(0.502472997, 0, 0.515167594, 0)
+fixed.Size = UDim2.new(0, 276, 0, 87)
+fixed.Font = Enum.Font.GothamBold
+fixed.Text = "Fixed"
+fixed.TextColor3 = Color3.fromRGB(255, 255, 255)
+fixed.TextSize = 16.000
+fixed.TextWrapped = true
+fixed.TextXAlignment = Enum.TextXAlignment.Left
+fixed.TextYAlignment = Enum.TextYAlignment.Top
+
+TextLabel.Name = "©"
+TextLabel.Parent = MainFrame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.0120000141, 0, 0.904999912, 0)
+TextLabel.Size = UDim2.new(0.987999916, 0, 0.0938775539, 0)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = "By Barbaric | Ui Hub"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextTransparency = 0.500
+TextLabel.TextWrapped = true
+TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+Line.Name = "Line"
+Line.Parent = MainFrame
+Line.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Line.BorderSizePixel = 0
+Line.Position = UDim2.new(0.180000007, 0, 0.200000003, 0)
+Line.Size = UDim2.new(0.647058845, 0, 0.00408163248, 0)
+Line.ZIndex = 2
+
+MainFrame_2.Name = "MainFrame"
+MainFrame_2.Parent = MainFrame
+MainFrame_2.AnchorPoint = Vector2.new(0.5, 0.5)
+MainFrame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainFrame_2.BorderSizePixel = 0
+MainFrame_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+MainFrame_2.Rotation = 3.000
+MainFrame_2.Size = UDim2.new(1, 0, 1, 0)
+MainFrame_2.ZIndex = 0
+
+shadow.Name = "shadow"
+shadow.Parent = MainFrame_2
+shadow.Active = true
+shadow.AnchorPoint = Vector2.new(0.5, 0.5)
+shadow.BackgroundTransparency = 1.000
+shadow.BorderSizePixel = 0
+shadow.Position = UDim2.new(0.5, 5, 0.5, 5)
+shadow.Size = UDim2.new(1.01647055, 0, 1.02857149, 0)
+shadow.ZIndex = 0
+shadow.Image = "rbxassetid://1316045217"
+shadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+shadow.ImageTransparency = 0.600
+shadow.ScaleType = Enum.ScaleType.Slice
+shadow.SliceCenter = Rect.new(10, 10, 118, 118)
+
+UIGradient_8.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(22, 22, 22)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(118, 118, 118))}
+UIGradient_8.Rotation = 43
+UIGradient_8.Parent = MainFrame_2
+
+Exit.Name = "Exit"
+Exit.Parent = MainFrame
+Exit.AnchorPoint = Vector2.new(0.5, 0.5)
+Exit.BackgroundColor3 = Color3.fromRGB(255, 65, 68)
+Exit.BorderSizePixel = 0
+Exit.Position = UDim2.new(0.975233495, 0, 0.0354887135, 0)
+Exit.Size = UDim2.new(0.0799999982, 0, 0.127000004, 0)
+Exit.ZIndex = 2
+Exit.Font = Enum.Font.FredokaOne
+Exit.Text = ""
+Exit.TextColor3 = Color3.fromRGB(255, 65, 68)
+Exit.TextScaled = true
+Exit.TextSize = 14.000
+Exit.TextWrapped = true
+
+UICorner_5.Parent = Exit
+
+TextLabel_2.Parent = Exit
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0, 0, 1.68660407e-07, 0)
+TextLabel_2.Size = UDim2.new(1.00000012, 0, 1, 0)
+TextLabel_2.ZIndex = 3
+TextLabel_2.Font = Enum.Font.FredokaOne
+TextLabel_2.Text = "X"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+CreditFrame.Name = "Credit Frame"
+CreditFrame.Parent = MainFrame
+CreditFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CreditFrame.BackgroundTransparency = 1.000
+CreditFrame.Position = UDim2.new(0, 0, 0.00815872382, 0)
+CreditFrame.Size = UDim2.new(0.997647047, 0, 0.192204744, 0)
+
+Credit.Name = "Credit"
+Credit.Parent = CreditFrame
+Credit.AnchorPoint = Vector2.new(0.5, 0.5)
+Credit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credit.BackgroundTransparency = 1.000
+Credit.BorderSizePixel = 0
+Credit.Position = UDim2.new(0.5, 0, 0.5, 0)
+Credit.Size = UDim2.new(0.998823464, 0, 0.692485571, 0)
+Credit.ZIndex = 2
+Credit.Font = Enum.Font.SourceSansBold
+Credit.Text = "Changelog"
+Credit.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credit.TextScaled = true
+Credit.TextSize = 14.000
+Credit.TextWrapped = true
+
+shadow_2.Name = "shadow"
+shadow_2.Parent = MainFrame
+shadow_2.Active = true
+shadow_2.AnchorPoint = Vector2.new(0.5, 0.5)
+shadow_2.BackgroundTransparency = 1.000
+shadow_2.BorderSizePixel = 0
+shadow_2.Position = UDim2.new(0.5, 5, 0.5, 5)
+shadow_2.Size = UDim2.new(1.01647055, 0, 1.02857149, 0)
+shadow_2.ZIndex = 0
+shadow_2.Image = "rbxassetid://1316045217"
+shadow_2.ImageColor3 = Color3.fromRGB(0, 0, 0)
+shadow_2.ImageTransparency = 0.600
+shadow_2.ScaleType = Enum.ScaleType.Slice
+shadow_2.SliceCenter = Rect.new(10, 10, 118, 118)
+
+OpenH.Name = "OpenH"
+OpenH.Parent = UpdatesTest
+OpenH.AnchorPoint = Vector2.new(0.5, 0.5)
+OpenH.BackgroundColor3 = Color3.fromRGB(247, 247, 247)
+OpenH.BorderSizePixel = 0
+OpenH.Position = UDim2.new(0.934500635, 0, 0.740241587, 0)
+OpenH.Size = UDim2.new(0.107000001, 0, 0.0790000036, 0)
+OpenH.ZIndex = 2
+OpenH.Font = Enum.Font.GothamMedium
+OpenH.Text = ""
+OpenH.TextColor3 = Color3.fromRGB(255, 255, 255)
+OpenH.TextScaled = true
+OpenH.TextSize = 14.000
+OpenH.TextWrapped = true
+
+TextLabel_3.Parent = OpenH
+TextLabel_3.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel_3.Size = UDim2.new(0.955613554, 0, 0.983474374, 0)
+TextLabel_3.ZIndex = 2
+TextLabel_3.Font = Enum.Font.FredokaOne
+TextLabel_3.Text = "Updates"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextSize = 25.000
+TextLabel_3.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextWrapped = true
+
+UIGradient_9.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(53, 53, 53)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(94, 94, 94))}
+UIGradient_9.Rotation = 32
+UIGradient_9.Parent = OpenH
+
+PenumbraShadow.Name = "PenumbraShadow"
+PenumbraShadow.Parent = OpenH
+PenumbraShadow.AnchorPoint = Vector2.new(0.5, 0.5)
+PenumbraShadow.BackgroundTransparency = 1.000
+PenumbraShadow.BorderSizePixel = 0
+PenumbraShadow.Position = UDim2.new(0.5, 0, 0.5, 1)
+PenumbraShadow.Size = UDim2.new(1, 18, 1, 18)
+PenumbraShadow.ZIndex = 0
+PenumbraShadow.Image = "rbxassetid://1316045217"
+PenumbraShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+PenumbraShadow.ImageTransparency = 0.880
+PenumbraShadow.ScaleType = Enum.ScaleType.Slice
+PenumbraShadow.SliceCenter = Rect.new(10, 10, 118, 118)
+
+AmbientShadow.Name = "AmbientShadow"
+AmbientShadow.Parent = OpenH
+AmbientShadow.AnchorPoint = Vector2.new(0.5, 0.5)
+AmbientShadow.BackgroundTransparency = 1.000
+AmbientShadow.BorderSizePixel = 0
+AmbientShadow.Position = UDim2.new(0.5, 0, 0.5, 3)
+AmbientShadow.Size = UDim2.new(1, 5, 1, 5)
+AmbientShadow.ZIndex = 0
+AmbientShadow.Image = "rbxassetid://1316045217"
+AmbientShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+AmbientShadow.ImageTransparency = 0.800
+AmbientShadow.ScaleType = Enum.ScaleType.Slice
+AmbientShadow.SliceCenter = Rect.new(10, 10, 118, 118)
+
+UmbraShadow.Name = "UmbraShadow"
+UmbraShadow.Parent = OpenH
+UmbraShadow.AnchorPoint = Vector2.new(0.5, 0.5)
+UmbraShadow.BackgroundTransparency = 1.000
+UmbraShadow.BorderSizePixel = 0
+UmbraShadow.Position = UDim2.new(0.5, 0, 0.5, 6)
+UmbraShadow.Size = UDim2.new(1, 10, 1, 10)
+UmbraShadow.ZIndex = 0
+UmbraShadow.Image = "rbxassetid://1316045217"
+UmbraShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+UmbraShadow.ImageTransparency = 0.860
+UmbraShadow.ScaleType = Enum.ScaleType.Slice
+UmbraShadow.SliceCenter = Rect.new(10, 10, 118, 118)
+
+-- Scripts:
+
+local function CXVFQX_fake_script() -- ScrollingFrame.AutoSizing 
+	local script = Instance.new('LocalScript', ScrollingFrame)
+
+	local function UpdateCanvasSize(Canvas, Constraint)
+		Canvas.CanvasSize = UDim2.new(0, Constraint.AbsoluteContentSize.X, 0, Constraint.AbsoluteContentSize.Y+20)
+	end
+	
+	
+	task.wait(2) -- I have this wait because I use scripts to import items, so it needs time to wait for all items to come in.
+	
+	UpdateCanvasSize(script.Parent, script.Parent.UIGridLayout)
+end
+coroutine.wrap(CXVFQX_fake_script)()
+local function VLAL_fake_script() -- Exit.LocalScript 
+	local script = Instance.new('LocalScript', Exit)
+
+	local b = script.Parent
+	
+	-- exit
+	
+	b.MouseButton1Click:Connect(function()
+		script.Parent.Parent:TweenPosition(UDim2.new(0.5, 0,1.5, 0), "Out", "Elastic", 1)
+	end)
+end
+coroutine.wrap(VLAL_fake_script)()
+local function UHYDFF_fake_script() -- Exit.ClickEffect 
+	local script = Instance.new('LocalScript', Exit)
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent:TweenSize(UDim2.new(0.073, 0,0.112, 0),"Out","Quad",.1,true)
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent:TweenSize(UDim2.new(0.08, 0,0.127, 0),"Out","Quad",.1,true)
+	end)
+end
+coroutine.wrap(UHYDFF_fake_script)()
+local function ZQIW_fake_script() -- OpenH.SoundEffect 
+	local script = Instance.new('LocalScript', OpenH)
+
+	function PlaySound( )
+		script.Parent.Click:Play( )
+	end
+	script.Parent.MouseButton1Click:connect(PlaySound)
+end
+coroutine.wrap(ZQIW_fake_script)()
+local function CDIAKJH_fake_script() -- OpenH.ClickEffect 
+	local script = Instance.new('LocalScript', OpenH)
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent:TweenSize(UDim2.new(0.093, 0,0.068, 0),"Out","Quart",.5,true) -- di pencet
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent:TweenSize(UDim2.new(0.107, 0,0.079, 0),"Out","Quart",.5,true)
+	end)
+end
+coroutine.wrap(CDIAKJH_fake_script)()
+local function RKID_fake_script() -- OpenH.LocalScript 
+	local script = Instance.new('LocalScript', OpenH)
+
+	local b = script.Parent
+	
+	b.MouseButton1Click:Connect(function()
+		script.Parent.Parent.MainFrame:TweenPosition(UDim2.new(0.5, 0,0.5, 0), "Out", "Elastic", 1)
+	end)
+end
+coroutine.wrap(RKID_fake_script)()
+local function RMDJSJV_fake_script() -- OpenH.RotationEffect 
+	local script = Instance.new('LocalScript', OpenH)
+
+	script.Parent.MouseEnter:Connect(function()
+		for i = 0,-5,-5 do
+			wait()
+			script.Parent.Rotation = i
+		end
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		for i = -5,0,5 do
+			wait()
+			script.Parent.Rotation = i
+		end
+	end)
+end
+coroutine.wrap(RMDJSJV_fake_script)()
